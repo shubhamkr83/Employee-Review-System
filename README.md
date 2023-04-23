@@ -11,16 +11,16 @@ It allow employees to talk each other, in a professional and respectful manner.
   
 ## Tech stack
 <ul>
-<ol>Nodejs</ol>
-<ol>Expressjs</ol>
-<ol>ejs</ol>
-<ol>express-ejs-layouts</ol>
-<ol>express-session</ol>
-<ol>mongoose</ol>
-<ol>passport</ol>
-<ol>passport-local</ol>
-<ol>cookie-parser</ol>
-<ol>connect-mongo</ol>
+<li>Nodejs</li>
+<li>Expressjs</li>
+<li>ejs</li>
+<li>express-ejs-layouts</li>
+<li>express-session</li>
+<li>mongoose</li>
+<li>passport</li>
+<li>passport-local</li>
+<li>cookie-parser</li>
+<li>connect-mongo</li>
 </ul>
   
 ## How to setup the project on local system
@@ -38,7 +38,7 @@ It allow employees to talk each other, in a professional and respectful manner.
   ## Features
   * Adimin Interface
  
-  *Interface for employee who is not admin
+  * Interface for employee who is not admin
  
   * Admin have all employee Data
 
