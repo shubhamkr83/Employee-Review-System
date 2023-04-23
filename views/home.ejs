@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="/css/home.css">
+<div id="body-container">
+    <%if(!locals.user.isAdmin){%>
+        <div class="admin-pass">
+            <form action="/admin/admin-pass" id="admin-pass-input" method="POST">
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    <input type="password" name="admin_password" class="form__input" placeholder="Admin Password">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="pass-btn btn login_btn">Enter as Admin</button>
+                </div>
+            </form>
+        </div>
+        <%}%>
+            <div class="d-flex gap-4 justify-content-around flex-row align-items-center" id="home_sec">
+                <div class="home-box">
+                    <h5 class="text-colr">Give Review to other employee*
+                        <br>
+                        <small class="small-text text-colr"><i>this task is assigned by admin</i></small>
+                    </h5>
+                    <div class="review-box">
+
+                        <% for(let r of recipients){ %>
+                            <%if(r!= null){%>
+                                <div class="card no-b ">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-colr">To:<%= r.name %>
+                                        </h5>
+                                        <form action="/reviews/newReview/<%= r._id %>" method="get">
+                                            <textarea class="form-control" placeholder="Leave a review here"
+                                                id="floatingTextarea2" style="height: 100px" name="newReview" rows="5">
+                        </textarea>
+                                            <div class="right-alligned m-10">
+                                                <button type="submit" class="btn btn-info mt-2 ">submit </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <%}%>
+                                    <% } %>
+
+                    </div>
+
+                </div>
+
+                <div class="home-box">
+                    <h5 class="text-colr">My Reviews by Other employee*</h5>
+                    <div class="review-box">
+
+                        <% for(let i=0; i < reviews.length; i++) { %>
+                            <div class="card-out">
+                                <div class="in-card">
+                                    <h5 class="cls-txt">message : <%= reviews[i].review %>
+                                    </h5>
+                                    <p class="cls-txt">from : <%= reviews[i].name %>
+                                    </p>
+                                    </form>
+                                </div>
+                            </div>
+                            <% } %>
+
+                    </div>
+
+                </div>
+            </div>
+</div>

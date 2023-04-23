@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;500&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+body {
+    background-image: url(../erbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-colr {
+    color: rgb(0, 0, 0);
+    font-family: 'Poltawski Nowy', serif;
+}
+
+.small-text {
+    margin-top: -100px;
+}
+
+#body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#home_sec {
+    width: 100%;
+    margin-top: 6.5rem;
+}
+
+.home-box {
+    width: 40%;
+    height: fit-content;
+    margin-top: 2rem;
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+.cls-txt {
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    padding-top: 1rem;
+}
+
+.admin-pass {
+    margin-top: 5px;
+}
+
+.pass-btn {
+    border: 1px solid #04cdff;
+    background-color: rgb(154, 135, 170);
+    color: #fff;
+    border-radius: 15px;
+}
+
+.admin-pass>form>input {
+    outline: none;
+    border: 1px solid rgb(36, 35, 90);
+    border-radius: 7px;
+}
+
+.card-out {
+    margin: auto;
+    width: 80%;
+    border: 1px solid rgb(107, 93, 93);
+    border-radius: 20px;
+    background-color: rgb(115, 25, 219);
+    margin-bottom: 5px;
+}
+
+
+.review-box {
+    width: 95%;
+    /* height: fit-content; */
+    max-height: 240px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 5px;
+    background: #fff;
+    border: 2px solid rgb(0, 120, 175);
+    border-radius: 10px;
+}
+
+.admin-pass {
+    margin-top: 4rem;
+}
+
+#admin-pass-input {
+    display: flex;
+}
+
+.form-group {
+    padding-right: 2rem;
+}
+
+.login_btn {
+    color: black;
+    background-color: #FFC312;
+    width: auto;
+}
+
+.login_btn:hover {
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width:600px) {
+    .home-box {
+        width: 98%;
+    }
+}

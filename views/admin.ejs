@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="/css/admin.css">
+<div class="container-fluid mt-6 " id="admin_sec">
+    <h4 class="text-center text-colr">Assign recipient-employee and reviewer-employee </h4>
+
+    <div class="container d-flex gap-4 justify-content-between flex-row align-items-center mt-5">
+        <div class="row col-md-6 card">
+            <h4 class="text-center text-colr">Set Reviewers</h4>
+            <hr>
+
+            <form method="POST" action="/admin/set-Reviewers" class="mt-1 card-body">
+                <div>
+                    <h4 class="text-colr">select Recipient employee</h4>
+                    <select class="form-select form-select-lg mb-3 text-colr" aria-label=".form-select-lg example"
+                        name="getReviewer">
+
+                        <option selected disabled>Select Recipient</option>
+
+                        <% for(let i=0; i < employeeList.length; i++){ %>
+
+                            <option value="<%= employeeList[i].id  %>">
+                                <%= employeeList[i].name %>
+                            </option>
+
+                            <% } %>
+                    </select>
+                </div>
+
+                <div>
+                    <h4 class="text-colr">Reviewer</h4>
+                    <select class="form-select form-select-lg mb-3 text-colr" aria-label=".form-select-lg example"
+                        name="setReviewer">
+
+                        <option selected disabled>Select Reviewer</option>
+
+                        <% for(let i=0; i < employeeList.length; i++){ %>
+                            <option value="<%= employeeList[i].id %>">
+                                <%= employeeList[i].name %>
+                            </option>
+                            <% } %>
+                    </select>
+                </div>
+
+                <div class="d-grid gap-2 col-6 mx-auto form_button">
+                    <input class="btn btn-bg" type="submit" value="Submit">
+                </div>
+
+            </form>
+        </div>
+
+        <div class="row col-md-6 card card-body">
+            <h5 class="text-center text-colr">Make Admin to any Employee</h5>
+            <hr>
+
+            <form method="POST" action="/admin/newAdmin" class="mt-3">
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="newAdmin">
+
+                    <option selected disabled>
+                        <h6>choose any...</h6>
+                    </option>
+                    <% for(let i=0; i < employeeList.length; i++){ %>
+                        <option value="<%= employeeList[i].id %>">
+                            <%= employeeList[i].name %>
+                        </option>
+                        <%}%>
+                </select>
+
+                <div class="d-grid gap-2 col-6 mx-auto form_button mb-3">
+                    <input class="btn btn-bg" type="submit" value="Submit" />
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</div>
