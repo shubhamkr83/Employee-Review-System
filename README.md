@@ -5,10 +5,19 @@
 to talk about each other based upon their work and behavior. 
 It works like -- employees can write feedback about each other, but only the admin, can assign task , add new employ and give authority to other employee.
 
+  ## Features
+  * Adimin Interface
+ 
+  * Interface for employee who is not admin
+ 
+  * Admin have all employee Data
 
-the main purpose of This application Employee Review System is for companies to improve and grow. 
-It allow employees to talk each other, in a professional and respectful manner.
-  
+  * Admin assing work to employ for feeback each other, or give Authority to others.  
+ 
+  * SignUp Interface
+
+  * SignIn Inteface
+
 ## Tech stack
 <ul>
 <li>Nodejs</li>
@@ -33,18 +42,3 @@ It allow employees to talk each other, in a professional and respectful manner.
   12345
   
   ```
-
- 
-  ## Features
-  * Adimin Interface
- 
-  * Interface for employee who is not admin
- 
-  * Admin have all employee Data
-
-  * Admin assing work to employ for feeback each other, or give Authority to others.  
- 
-  * SignUp Interface
-
-  * SignIn Inteface
- 
