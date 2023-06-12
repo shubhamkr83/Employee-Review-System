@@ -45,3 +45,8 @@ It works like -- employees can write feedback about each other, but only the adm
   12345
   
   ```
+<h2>Project Screenshots </h2>
+<h3>Home Page </h3>
+
+![Screenshot (391)](https://github.com/shubhamkr83/Employee-Review-System/assets/72254047/b56be2d6-2e3a-499f-96c7-dd6d4f1967c9)
+
